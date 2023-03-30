@@ -20,7 +20,7 @@ public class WhenCreatingObjects {
         Dog fido = new Dog("Fido","Bone", 5);
 
         String dogSound = "";
-        // TODO: implement a method in the Dog sound called makeNoise() that returns the sound a dog makes: "Woof", e.g.
+        // DONE: implement a method in the Dog sound called makeNoise() that returns the sound a dog makes: "Woof", e.g.
         dogSound = fido.makeNoise();
 
         Assert.assertEquals(dogSound, "Woof");
@@ -30,7 +30,7 @@ public class WhenCreatingObjects {
     public void whenADogGetsFed() {
         Dog fido = new Dog("Fido","Bone", 5);
 
-        // TODO: implement a method in the Dog sound called feed() that sets the isFed variable to true:
+        // DONE: implement a method in the Dog sound called feed() that sets the isFed variable to true:
          fido.feed();
 
         Assert.assertTrue(fido.isFed());
@@ -39,14 +39,13 @@ public class WhenCreatingObjects {
 
     @Test
     public void whenAnimalsPlay() {
-// TODO: Uncomment me
-//
-//        Pet fido = new Dog("Fido","Bone", 5);
-//        Pet spot = new Cat("Spot","String", 5);
-//        Pet hazel = new Hamster("Hazel", 1, "Wheel");
-//
-//        assertThat(fido.play(), equalTo("plays with bone"));
-//        assertThat(spot.play(), equalTo("plays with string"));
-//        assertThat(hazel.play(), equalTo("runs in wheel"));
+
+        Pet fido = new Dog("Fido","Bone", 5);
+        Pet spot = new Cat("Spot","String", 5);
+        Pet hazel = new Hamster("Hazel", 1, "Wheel");
+
+        assertThat(fido.play(), equalTo("plays with bone"));
+        assertThat(spot.play(), equalTo("plays with string"));
+        assertThat(hazel.play(), equalTo("runs in wheel"));
     }
 }
